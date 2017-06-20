@@ -1,4 +1,4 @@
-FROM solr:5.3
+FROM concordconsortium/solr:5.3
 
 ENV APP_HOME /opt/solr/rigse-solr-docker
 RUN mkdir $APP_HOME

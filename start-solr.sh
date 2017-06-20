@@ -21,4 +21,4 @@ create_core development
 create_core test
 create_core production
 
-docker-entrypoint.sh solr-foreground
+docker-entrypoint.sh solr
