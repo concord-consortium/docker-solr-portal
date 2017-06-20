@@ -56,7 +56,11 @@ reindex() {
     done
 }
 
-log "Starting sunspot automatic re-index ..."
 
-reindex &
+if [ ! -z "${SERVICE_API_ENDPOINT}" ]; then
+    log "Starting sunspot automatic re-index ..."
+    reindex &
+else
+    log "Sunspot automatic re-index not configured."
+fi
 
